@@ -21,7 +21,7 @@ function findItem(query) {
 function main() {
     const queryParam = getUrlParameter('query'); 
     
-    if (itemId) {
+    if (queryParam) {
         const foundItem = findItem(queryParam);
         
         if (foundItem) {
