@@ -25,7 +25,7 @@ function main() {
         const foundItem = findItem(queryParam);
         
         if (foundItem) {
-            console.log('Found item:', foundItem);
+            document.body.innerText = foundItem.description; // Display the result as plain text
         } else {
             console.log('queryParam not found.');
         }
