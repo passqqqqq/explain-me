@@ -19,18 +19,18 @@ function findItem(query) {
 
 // Main function to execute
 function main() {
-    const itemId = getUrlParameter('query'); 
+    const queryParam = getUrlParameter('query'); 
     
     if (itemId) {
-        const foundItem = findItem(query);
+        const foundItem = findItem(queryParam);
         
         if (foundItem) {
             console.log('Found item:', foundItem);
         } else {
-            console.log('Item not found.');
+            console.log('queryParam not found.');
         }
     } else {
-        console.log('No ID parameter found in the URL.');
+        console.log('No queryParam parameter found in the URL.');
     }
 }
 
